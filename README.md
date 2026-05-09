@@ -9,3 +9,6 @@ Classic Windows 9x style themer and configuration utility for Raspberry Pi OS on
 
 ## Installation
 TBA!
+
+## Post Install
+- For various ARM64 binaries of retro games, check out the ARM64Ports GitHub repository! https://github.com/faithvoid/ARM64Ports
