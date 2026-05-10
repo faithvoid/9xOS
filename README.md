@@ -8,6 +8,7 @@ Classic Windows 9x style themer and configuration utility for Raspberry Pi OS on
 
 ## Installation
 ``` sudo apt install icoextract exe-thumbnailer smplayer audacious pidgin xfce4 xfce4-goodies innoextract cabextract msitools ```
+
 This will install SMPlayer and Audacious, a music and video player combination that can be themed to look like Winamp and classic Windows Media Player, icoextract and exe-thumbnailer to display and extract EXE thumbnails, Pidgin as an all-in-one retro-looking instant messaging client, XFCE4 + Goodies as the primary desktop environment for a lightweight 9x-style UI experience, and innoextract + cabextract + msitools for manually extracting .cab/.exe files for installers that won't play nicely with WINE (rare, but it happens! It's also faster to install certain games this way in my experience.)
 
 To set XFCE4 as your primary desktop environment, run ``` sudo update-alternatives --config x-session-manager ``` and restart. If you're still not seeing XFCE4 on boot, try ``` sudo update-alternatives --config startxfce4 ```, and/or add "exec startxfce4" to ~/.xsession
