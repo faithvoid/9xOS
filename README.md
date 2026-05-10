@@ -3,8 +3,8 @@ Classic Windows 9x style themer and configuration utility for Raspberry Pi OS on
 
 ## Parts Required
 - Raspberry Pi 4/5 or similar ARM64-based SBC (this script specifically targets the Raspberry Pi OS flavour of Debian)
-- (Optional) A 3.5mm to composite output cable for a Pi 4, a composite video cable soldered to a Pi 5, or a VGA666 adapter for the most authentic experience. No shame in just using HDMI if that's all that you've got, though. Be warned that using an HDMI-to-VGA or HDMI-to-composite adapter, you may get quality or latency issues that wouldn't exist using the native output methods.
-- Ideally a 64GB or larger microSD card, USB drive or SSD (early retro games may be small, but even installing about 15 or so games can fill up a 32GB microSD card really quick, if using a 32GB microSD, I'd advise installing all games on an external drive). 
+- (Optional) A 3.5mm to composite output cable for a Pi 4, a composite video cable soldered to the TV OUT pins a Pi 5, or a VGA666 adapter for the most authentic experience. No shame in just using HDMI if that's all that you've got, though. Be warned that if using an HDMI-to-VGA or HDMI-to-composite adapter, you may get quality or latency issues that wouldn't exist using the native output methods.
+- Ideally a 64GB or larger microSD card, USB drive or SSD (early retro games may be small, but even installing about 15 or so games can fill up a 32GB microSD card really quick, so if you're using a 32GB microSD, I'd highly advise installing all of your games onto an external drive. Don't worry about R/W speeds too much, I'm using a crappy unbranded USB 2.0 stick I got for free from a corporate meeting and games from that era load lightning quick on it, it's only the write speeds that really suck on it).
 
 ## Installation
 ``` sudo apt install icoextract exe-thumbnailer smplayer audacious pidgin xfce4 xfce4-goodies innoextract cabextract msitools ```
@@ -19,3 +19,5 @@ Once you've installed WINE, type "winecfg" into your start menu, and set compati
 
 ## Post Install
 - For various ARM64 binaries of retro games for best performance, check out my ARM64Ports GitHub repository! https://github.com/faithvoid/ARM64Ports
+- For retro messenger support, Pidgin is included in the default install script. You can use Retro AIM Server to connect to an AIM instance, connect to IRC chats, or install ```msn-pecan``` to connect to Escargot, an MSN Messenger private server. You can also use native builds of MSN Messenger (versions 3.0 and 4.0 have been tested and work with the Escargot Patcher), but note that MSN seems to use a LOT of memory in WINE, so I would not recommend using it on Pi systems with less than 2GB of RAM (on a 1GB Pi 5, having MSN in the background plus running other applications tends to crash the system, whereas Pidgin is lightweight and barely noticeable, even with several chats open).
+- For web browsing, I'd recommend using Pale Moon over Firefox, especially on lower-end devices. It both looks closer to the 00s era of Firefox and runs much better on RAM-limited devices such as the 1GB Pi 4/5. Some websites may have issues, but most you'd visit on a system like this don't (for example, Newgrounds might give you a security error if browsing on an unknown IP, but if you visit Newgrounds on another device then revisit it on the Pi, it'll work just fine). 
