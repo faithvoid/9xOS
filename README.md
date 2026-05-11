@@ -1,6 +1,10 @@
 # 9xOS
 Classic Windows 9x style themer and configuration utility for Raspberry Pi OS on the Raspberry Pi 4/5, to assist the user in setting up a pseudo-retro retro gaming PC on their SBC.
 
+## External Components
+- Pastel2K - Windows 9X/2K style themes, a few converted directly from compatible .theme files (will soon include 'Windows Theme Installer', a one-click solution to install Windows 2000 theme files directly on XFCE, no manual conversion required!)
+- ARM64Binaries - A library of compiled ARM64 binaries for retro PC games.
+
 ## Parts Required
 - Raspberry Pi 4/5 or similar ARM64-based SBC (this script specifically targets the Raspberry Pi OS flavour of Debian)
 - (Optional) A 3.5mm to composite output cable for a Pi 4, a composite video cable soldered to the TV OUT pins a Pi 5, or a VGA666 adapter for the most authentic experience. No shame in just using HDMI if that's all that you've got, though. Be warned that if using an HDMI-to-VGA or HDMI-to-composite adapter, you may get quality or latency issues that wouldn't exist using the native output methods.
