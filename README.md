@@ -1,6 +1,8 @@
 # 9xOS
 Classic Windows 9x style themer and configuration utility for Raspberry Pi OS on the Raspberry Pi 4/5, to assist the user in setting up a pseudo-retro retro gaming PC on their SBC.
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=8GF4A3XS7ZHFY)
+
 ## External Components
 - Pastel2K - Windows 9X/2K style themes, a few converted directly from compatible .theme files (will soon include 'Windows Theme Installer', a one-click solution to install Windows 2000 theme files directly on XFCE, no manual conversion required!)
 - ARM64Binaries - A library of compiled ARM64 binaries for retro PC games.
