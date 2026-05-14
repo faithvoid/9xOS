@@ -4,8 +4,8 @@ Classic Windows 9x style themer and configuration utility for Raspberry Pi OS on
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=8GF4A3XS7ZHFY)
 
 ## External Components
-- Pastel2K - Windows 9X/2K style themes, a few converted directly from compatible .theme files (will soon include 'Windows Theme Installer', a one-click solution to install Windows 2000 theme files directly on XFCE, no manual conversion required!)
-- ARM64Binaries - A library of compiled ARM64 binaries for retro PC games.
+- ![Pastel2K](https://github.com/faithvoid/Pastel2K) - Windows 9X/2K style themes, a few converted directly from compatible .theme files (will soon include 'Windows Theme Installer', a one-click solution to install Windows 2000 theme files directly on XFCE, no manual conversion required!)
+- ![ARM64Binaries](https://github.com/faithvoid/ARM64Binaries) - A library of compiled ARM64 binaries for retro PC games.
 
 ## Parts Required
 - Raspberry Pi 4/5 or similar ARM64-based SBC (this script specifically targets the Raspberry Pi OS flavour of Debian)
