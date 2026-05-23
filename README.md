@@ -30,3 +30,8 @@ Once you've installed WINE, type "winecfg" into your start menu, and set compati
 - For web browsing, I'd recommend using Pale Moon over Firefox, especially on lower-end devices. It both looks closer to the 00s era of Firefox and runs much better on RAM-limited devices such as the 1GB Pi 4/5. Some websites may have issues, but most you'd visit on a system like this don't (for example, Newgrounds might give you a security error if browsing on an unknown IP, but if you visit Newgrounds on another device then revisit it on the Pi, it'll work just fine). 
 - If VGA output is giving you issues, add the following to the end of /boot/firmware/cmdline.txt: "video=VGA-1:800x600@60"
 - To use any Windows 9x/2x era theme you find online, run "Windows Theme Installer" from the terminal, point it towards the folder that contains your Windows ".theme" file, and watch as it automagically converts your theme to a Redmond97-based theme, complete with system sounds and custom cursors if found!
+- You can install Steam via Pi-Apps on the Pi 5. I really wouldn't recommend doing this on a 1GB Pi 5, but it's an option!
+
+## TODO:
+- [ ] Create 9xOS install script
+- [ ] Include Pale Moon in aforementioned install script
