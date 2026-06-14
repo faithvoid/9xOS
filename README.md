@@ -33,6 +33,43 @@ Once you've installed WINE, type "winecfg" into your start menu, and set compati
 - To use any Windows 9x/2x era theme you find online, run "Windows Theme Installer" from the terminal, point it towards the folder that contains your Windows ".theme" file, and watch as it automagically converts your theme to a Redmond97-based theme, complete with system sounds and custom cursors if found!
 - You can install Steam via Pi-Apps on the Pi 5. I really wouldn't recommend doing this on a 1GB Pi 5, but it's an option!
 
+## Adding Windows / Linux Games to RetroPie
+- Modify /etc/emulationstation/es_systems.cfg and add the following entries
+```
+  <system>
+    <name>linux</name>
+    <fullname>Linux</fullname>
+    <path>/home/pi/RetroPie/roms/linux</path>
+    <extension>.sh .SH</extension>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ linux %ROM%</command>
+    <platform>linux</platform>
+    <theme>linux</theme>
+  </system>
+  <system>
+    <name>windows</name>
+    <fullname>Windows</fullname>
+    <path>/home/pi/RetroPie/roms/windows</path>
+    <extension>.sh .SH</extension>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ windows %ROM%</command>
+    <platform>pc</platform>
+    <theme>pc</theme>
+  </system>
+
+```
+- In /opt/retropie/configs, make two new folders, "linux" and "windows"
+- In "linux", make a file called "emulators.cfg" with the following
+```
+linux = "XINIT-WM:%ROM%"
+default = "linux"
+```
+- In "windows", make a file called "emulators.cfg" with the following
+```
+windows = "XINIT-WM:%ROM%"
+default = "windows"
+```
+- The above scripts will load WINE or Linux games with a minimal X server, saving system resources.
+- To create an entry for either Windows or Linux, create an .sh file in your system of choice with the name of the game you'd like as the filename, with the .sh file either containing an entry similar to "./home/pi/Games/Linux/Half-Life/xash3d" if it's a Linux game, or "wine /home/pi/Games/Windows/Half-Life/hl.exe" if it's a Windows game.
+
 ## TODO:
 - [ ] Create 9xOS install script
 - [ ] Include Pale Moon in aforementioned install script
