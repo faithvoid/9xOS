@@ -13,7 +13,7 @@ Classic Windows 9x style themer and configuration utility for Raspberry Pi OS on
 - Ideally a 64GB or larger microSD card, USB drive or SSD (early retro games may be small, but even installing about 15 or so games can fill up a 32GB microSD card really quick, so if you're using a 32GB microSD, I'd highly advise installing all of your games onto an external drive. Don't worry about R/W speeds too much, I'm using a crappy unbranded USB 2.0 stick I got for free from a corporate meeting and games from that era load lightning quick on it, it's only the write speeds that really suck on it). You can also symlink your ~/.wine folder to an external USB drive so that it doesn't take up any space on your actual partition itself.
 
 ## Installation
-``` sudo apt install icoextract exe-thumbnailer smplayer audacious pidgin xfce4 xfce4-goodies innoextract cabextract msitools dosbox-x scummvm```
+```sudo apt install icoextract exe-thumbnailer smplayer audacious pidgin xfce4 xfce4-goodies innoextract cabextract msitools dosbox-x scummvm```
 
 This will install SMPlayer and Audacious, a music and video player combination that can be themed to look like Winamp and classic Windows Media Player, icoextract and exe-thumbnailer to display and extract EXE thumbnails, Pidgin as an all-in-one retro-looking instant messaging client, XFCE4 + Goodies as the primary desktop environment for a lightweight 9x-style UI experience, and innoextract + cabextract + msitools for manually extracting .cab/.exe files for installers that won't play nicely with WINE (rare, but it happens! It's also faster to install certain games this way in my experience.)
 
