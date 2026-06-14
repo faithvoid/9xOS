@@ -69,6 +69,7 @@ default = "windows"
 ```
 - The above scripts will load WINE or Linux games with a minimal X server, saving system resources.
 - To create an entry for either Windows or Linux, create an .sh file in your system of choice with the name of the game you'd like as the filename, with the .sh file either containing an entry similar to "./home/pi/Games/Linux/Half-Life/xash3d" if it's a Linux game, or "wine /home/pi/Games/Windows/Half-Life/hl.exe" if it's a Windows game.
+- Note that if you're running these games and outputting video via Composite, a lot of games won't like the odd resolution and may not work. YMMV! If they don't work, experiment with winecfg + a 640x480 virtual desktop and that SHOULD work, with some border around the edges.
 
 ## TODO:
 - [ ] Create 9xOS install script
